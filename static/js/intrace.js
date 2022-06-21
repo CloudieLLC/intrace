@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
 	jQuery('body').html(
-		'<a class="github-fork-ribbon" href="//github.com/Fusl/intrace" title="Fork me on GitHub">Fork me on GitHub</a>' +
+		'<!--<a class="github-fork-ribbon" href="//github.com/CloudieLLC/intrace" title="Fork me on GitHub">Fork me on GitHub</a>-->' +
 		'<div class="container">' +
 			'<div class="row">' +
 				'<div class="col-xs-12">' +
