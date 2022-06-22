@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
 	jQuery('body').html(
-		'<!--<a class="github-fork-ribbon" href="//github.com/CloudieLLC/intrace" title="Fork me on GitHub">Fork me on GitHub</a>-->' +
+		'<a class="github-fork-ribbon" href="//forms.gle/tCVbwNQRN7AyDaBD6" title="Sponsor A POP">Sponsor A POP.</a>' +
 		'<div class="container">' +
 			'<div class="row">' +
 				'<div class="col-xs-12">' +
@@ -174,8 +174,7 @@ jQuery(document).ready(function() {
 						probes[probe].city +
 					'</div>' +
 					'<div class="float_right">' +
-						'&nbsp;<a href="' + probes[probe].providerurl + '" class="glyphicon glyphicon-home providerhome" aria-hidden="true"></a> ' +
-						'<a href="#" class="provider-toggle">' + probes[probe].provider + '</a> ' +
+						'<a href="' + probes[probe].providerurl + '" class="provider-toggle">' + probes[probe].provider + '</a> ' +
 						'<a target="_blank" href="https://bgp.tools/as/' + probes[probe].asnumber + '" class="asn">' + probes[probe].asnumber + '</a> ' +
 						'<a href="#" class="provider-toggle"><img src="providerlogos/' + md5(probes[probe].provider) + '.png" alt="" title="' + probes[probe].provider + '" onerror="this.onerror=null;this.src=\'providerlogos/d41d8cd98f00b204e9800998ecf8427e.png\';" ></a>' +
 					'</div>' +
