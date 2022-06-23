@@ -176,7 +176,6 @@ jQuery(document).ready(function() {
 					'<div class="float_right">' +
 						'<a href="' + probes[probe].providerurl + '" class="provider">' + probes[probe].provider + '</a> ' +
 						'<a target="_blank" href="https://bgp.tools/as/' + probes[probe].asnumber + '" class="asn">' + probes[probe].asnumber + '</a> ' +
-						'<a href="#" class="provider-toggle"><img src="providerlogos/' + md5(probes[probe].provider) + '.png" alt="" title="' + probes[probe].provider + '" onerror="this.onerror=null;this.src=\'providerlogos/d41d8cd98f00b204e9800998ecf8427e.png\';" ></a>' +
 					'</div>' +
 					'<div class="clear_both"></div>' +
 				'</div>'
