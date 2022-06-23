@@ -169,7 +169,7 @@ jQuery(document).ready(function() {
 				(lastgroup !== probes[probe].group ? '<div data-group="' + probes[probe].group + '" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 groupheader"><h3 class="groupheader-toggle">' + (lastgroup = probes[probe].group) + '</h3></div>' : '') +
 				'<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 cap_probe' + (probes[probe].residential ? ' residential' : '') + '">' +
 					'<div class="float_left">' +
-						'<img src="flags/' + probes[probe].unlocode.toLowerCase().replace(/^(..)(...)$/, '$1') + '.png" class="country-toggle"> ' + 
+						'<img src="flags/' + probes[probe].unlocode.toLowerCase().replace(/^(..)(...)$/, '$1').slice(0,-4) + '.png" class="country-toggle"> ' + 
 						'<input id="probe_' + probe + '" data-residential="' + probes[probe].residential + '" data-group="' + probes[probe].group + '" data-unlocode="' + probes[probe].unlocode + '" data-country="' + probes[probe].country + '" data-city="' + probes[probe].city + '" data-provider="' + probes[probe].provider + '" data-asnumber="' + probes[probe].asnumber + '" ' + Object.keys(probes[probe].caps).map(function(cap){return 'data-cap'+cap+'="' + probes[probe].caps[cap] + '"';}).join(' ') + ' ' + (!probes[probe].status ? 'disabled ' : '') + 'data-toggle="probestoggle" data-on="' + probes[probe].unlocode.toUpperCase().replace(/^(..)(...)$/, '$1-$2') + '" data-off="' + probes[probe].unlocode.toUpperCase().replace(/^(..)(...)$/, '$1-$2') + '" type="checkbox" class="probe_checkbox"> ' +
 						probes[probe].city +
 					'</div>' +
